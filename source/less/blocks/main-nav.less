@@ -1,12 +1,18 @@
-.main-nav__toggle {
+.main-nav {
   position: relative;
+}
+.main-nav__toggle {
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
   &::before {
     content: "";
     width: 2px;
     height: 20px;
     position: absolute;
-    top: 0;
-    right: 10px;
+    top: -35px;
+    right: 20px;
+    transform: rotate(45deg);
     background-color: #000;
   }
   &::after {
@@ -14,8 +20,9 @@
     width: 2px;
     height: 20px;
     position: absolute;
-    top: 0;
+    top: -35px;
     right: 20px;
+    transform: rotate(-45deg);
     background-color: #000;
   }
 }
