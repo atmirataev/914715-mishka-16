@@ -17,9 +17,11 @@
 .catalog__item {
   margin-bottom: 30px;
   border-bottom: 1px solid #ececec;
+
   &--image {
     margin-bottom: 30px;
   }
+
   &--title {
     margin: 0;
     padding-left: 28px;
@@ -28,6 +30,7 @@
     font-size: 17px;
     line-height: 24px;
   }
+
   &--description {
     margin: 0;
     padding-left: 28px;
@@ -35,7 +38,8 @@
     font-size: 13px;
     line-height: 30px;
     color: #444444;
-    }
+  }
+
   &--price {
     width: 210px;
     margin: 0;
@@ -43,13 +47,14 @@
     padding: 25px 0;
     border-top: 1px solid #ececec;
     position: relative;
+
     &::after {
       content: "";
       width: 20px;
       height: 19px;
       position: absolute;
       top: 25px;
-      right: 0px;
+      right: 0;
       background: url("../../img/icon-cart.svg") no-repeat 0 0;
       opacity: 0.2;
     }
