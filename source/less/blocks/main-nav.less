@@ -13,7 +13,7 @@
     height: 20px;
     position: absolute;
     top: -35px;
-    right: 20px;
+    right: 40px;
     transform: rotate(45deg);
     background-color: #000000;
   }
@@ -24,8 +24,14 @@
     height: 20px;
     position: absolute;
     top: -35px;
-    right: 20px;
+    right: 40px;
     transform: rotate(-45deg);
     background-color: #000000;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
   }
 }
