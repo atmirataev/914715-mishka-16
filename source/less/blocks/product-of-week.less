@@ -1,5 +1,6 @@
 .product-of-week {
-  padding: 30px 30px 35px 30px;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 
 .product-of-week__title {
@@ -52,4 +53,29 @@
   font-size: 17px;
   line-height: 24px;
   color: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .product-of-week__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 55px;
+  }
+
+  .product-of-week__title {
+    width: 501px;
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  .product-of-week__flag {
+    width: 80px;
+    line-height: 17px;
+    margin: 0;
+    padding-top: 5px;
+    margin-right: 25px;
+  }
+
 }

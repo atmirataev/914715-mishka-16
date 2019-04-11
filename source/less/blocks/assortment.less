@@ -1,14 +1,53 @@
+.assortment__bg {
+  background-color: #f9f9f9;
+  background: url("../../img/hero-mobile@1x.jpg") no-repeat -123px -35px;
+}
+
 .assortment__item {
   display: block;
-  padding: 30px 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
-  background-color: #63d1bb;
   position: relative;
+
+  &--interior {
+    background-color: #63d1bb;
+  }
 
   &--toys {
     background-color: #56c3b2;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .assortment {
+    background-color: #f9f9f9;
+    padding: 0 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .assortment__bg {
+    background-image: url("../../img/");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .assortment__bg {
+    background-color: #f9f9f9;
+    background: url("../../img/hero-tablet@1x.jpg") no-repeat -240px 0;
+  }
+
+  .assortment__item {
+    width: 334px;
+    padding: 0;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 43px;
+    box-sizing: border-box;
   }
 }
