@@ -1,8 +1,6 @@
 .about-us {
   padding-top: 33px;
   padding-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .about-us__title {
@@ -28,4 +26,61 @@
   line-height: 20px;
   position: relative;
   padding-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .about-us {
+    padding: 0 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .about-us__item {
+    width: 334px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &--eco-materials {
+      order: 1;
+    }
+
+    &--hand-made {
+      order: 2;
+    }
+
+    &--low-price {
+      order: 3;
+    }
+
+    &--support {
+      order: 4;
+    }
+
+    &--popular-photos {
+      order: 5;
+    }
+
+    &--gift-wrap {
+      order: 6;
+    }
+  }
+
+  .about-us__features {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about-us__wrapper {
+    padding-left: 224px;
+  }
 }
