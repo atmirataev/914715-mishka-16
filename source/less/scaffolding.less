@@ -1,7 +1,3 @@
-html {
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
@@ -16,20 +12,19 @@ html {
   font-style: normal;
 }
 
-*,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
 body {
-  width: 320px;
-  margin: 0 auto;
+  margin: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 15px;
   line-height: 24px;
   color: #000000;
+  box-sizing: border-box;
 }
 
 a {

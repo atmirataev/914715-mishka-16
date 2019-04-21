@@ -1,11 +1,144 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
+  margin: 0 auto;
+  width: @mobile-width;
 }
 
 .page-header__logo {
   display: block;
   text-align: center;
   padding-top: 22px;
+}
+
+.page-header__nav {
+  position: relative;
+}
+
+.page-header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__toggle {
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    width: 2px;
+    height: 20px;
+    position: absolute;
+    top: -35px;
+    right: 36px;
+    transform: rotate(45deg);
+    background-color: #000000;
+  }
+
+  &::after {
+    content: "";
+    width: 2px;
+    height: 20px;
+    position: absolute;
+    top: -35px;
+    right: 36px;
+    transform: rotate(-45deg);
+    background-color: #000000;
+  }
+}
+
+.page-header__item {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__span {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: @tablet-width;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: -68px;
+  }
+
+  .page-header__logo {
+    height: 46px;
+    width: 113px;
+    padding: 0;
+    padding-top: 23px;
+    margin: 0;
+    margin-right: 207px;
+    box-sizing: border-box;
+    order: 1;
+  }
+
+  .page-header__logo-image {
+    height: 46px;
+    width: 113px;
+  }
+
+  .page-header__nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    order: 3;
+    width: 334px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .page-header__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-header__span {
+    order: 4;
+    display: block;
+    padding: 22px 0;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+    margin-left: auto;
+  }
+
+  .page-header__item {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: @desktop-width;
+    margin-bottom: -90px;
+  }
+
+  .page-header__nav {
+    order: 1;
+    width: 385px;
+  }
+
+  .page-header__logo {
+    order: 2;
+    width: 149px;
+    height: 72px;
+    margin: 0 auto;
+  }
+
+  .page-header__span {
+    display: none;
+  }
 }
