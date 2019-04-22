@@ -55,7 +55,33 @@
   color: #444444;
 }
 
+<<<<<<< HEAD
 @media (min-width: @tablet-width) {
+=======
+.product-of-week__flag--left {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .product-of-week {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 50px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+
+  .product-of-week::after {
+    content: "";
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url("../../img/bg-zigzag-line.svg") repeat-x 0 0;
+  }
+
+>>>>>>> 8c4c0a9822535c73c5498412137f1494094c3164
   .product-of-week__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +90,11 @@
   }
 
   .product-of-week__title {
+<<<<<<< HEAD
+=======
+    display: inline-block;
+    vertical-align: middle;
+>>>>>>> 8c4c0a9822535c73c5498412137f1494094c3164
     width: 501px;
     font-size: 43px;
     line-height: 50px;
@@ -71,6 +102,7 @@
   }
 
   .product-of-week__flag {
+<<<<<<< HEAD
     width: 80px;
     line-height: 17px;
     margin: 0;
@@ -78,4 +110,51 @@
     margin-right: 25px;
   }
 
+=======
+    display: inline-block;
+    vertical-align: bottom;
+    width: 80px;
+    line-height: 17px;
+    margin: 0 25px 0 58px;
+  }
+
+  .product-of-week__description {
+    width: 334px;
+  }
+
+  .product-of-week__characteristic,
+  .product-of-week__price,
+  .product-of-week__button {
+    width: 293px;
+  }
+
+  .product-of-week__image {
+    position: absolute;
+    right: 47px;
+    top: 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-of-week__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-of-week__flag--left {
+    display: block;
+  }
+
+  .product-of-week__flag--right {
+    display: none;
+  }
+
+  .product-of-week__right {
+    width: 875px;
+  }
+
+  .product-of-week__left {
+    width: 175px;
+  }
+>>>>>>> 8c4c0a9822535c73c5498412137f1494094c3164
 }

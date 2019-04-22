@@ -1,3 +1,8 @@
+.page-main {
+  width: @mobile-width;
+  margin: 0 auto;
+}
+
 .page-main__wrapper {
   padding: 0 30px;
   background-color: #f9f9f9;
@@ -9,16 +14,33 @@
   line-height: 30px;
   padding-top: 75px;
   padding-bottom: 115px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0;
   text-align: center;
 }
 
 @media (min-width: @tablet-width) {
+  .page-main {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .page-main__title {
     padding-top: 162px;
     padding-bottom: 370px;
     font-size: 43px;
     line-height: 50px;
-    
+    width: 510px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__title {
+    padding: 164px 200px 370px 200px;
+    font-size: 43px;
+    line-height: 50px;
+    width: 700px;
   }
 }
