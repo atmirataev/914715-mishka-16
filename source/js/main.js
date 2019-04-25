@@ -2,8 +2,6 @@ var siteMenu = document.querySelector('.site-menu');
 var userMenu = document.querySelector('.user-menu');
 var navToggle = document.querySelector('.page-header__toggle');
 
-// siteMenu.classList.add('site-menu--closed');
-// userMenu.classList.add('user-menu--closed');
 navToggle.classList.add('page-header__toggle--closed')
 
 navToggle.addEventListener('click', function () {
