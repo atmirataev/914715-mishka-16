@@ -1,11 +1,10 @@
 .about-us {
-  padding-top: 33px;
-  padding-bottom: 50px;
+  padding-top: 27px;
 }
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   padding: 0;
   font-weight: bold;
   font-size: 25px;
@@ -16,6 +15,58 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.about-us__item--eco-materials svg {
+  padding-left: 8px;
+}
+
+.about-us__item--eco-materials .about-us__features {
+  margin-top: 17px;
+}
+
+.about-us__item--low-price .about-us__features {
+  margin-top: 25px;
+}
+
+.about-us__item--popular-photos svg {
+  padding-left: 7px;
+  padding-top: 5px;
+}
+
+.about-us__item--popular-photos .about-us__features {
+  margin-top: 20px;
+}
+
+.about-us__item--hand-made svg {
+  padding-left: 4px;
+  padding-top: 2px;
+}
+
+.about-us__item--support svg {
+  padding-top: 3px;
+}
+
+.about-us__item--support .about-us__features {
+  margin-top: 27px;
+}
+
+.about-us__item--gift-wrap svg {
+  padding-top: 1px;
+  padding-left: 2px;
+}
+
+.about-us__item--gift-wrap .about-us__features {
+  margin-top: 28px;
+}
+
+.about-us__item--gift-wrap .about-us__features {
+  margin-top: 19px;
+}
+
+.about-us__features {
+  margin-bottom: 0;
+  width: 260px;
 }
 
 .about-us__item {
@@ -30,9 +81,15 @@
 
 @media (min-width: @tablet-width) {
   .about-us {
-    padding: 0 50px;
-    margin: 0 auto;
     box-sizing: border-box;
+    padding-bottom: 26px;
+  }
+
+  .about-us__title {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .about-us__list {
@@ -46,6 +103,9 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-bottom: 58px;
+    font-size: 20px;
+    line-height: 22px;
 
     &--eco-materials {
       order: 1;
@@ -73,18 +133,29 @@
   }
 
   .about-us__features {
-    width: 250px;
+    width: 334px;
     margin: 0;
     padding: 0;
+    margin-top: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 32px;
+  }
+
   .about-us__wrapper {
     padding-left: 224px;
   }
 
   .about-us__list {
     width: 700px;
+  }
+
+  .about-us__item {
+    width: 350px;
   }
 }
