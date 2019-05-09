@@ -1,0 +1,166 @@
+.production {
+  margin-bottom: 92px;
+}
+
+.production__wrapper {
+  position: relative;
+}
+
+.production__top {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ececec;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 101px;
+    height: 77px;
+    position: absolute;
+    top: 133px;
+    left: 80px;
+    background: url("../../img/icon-play.svg") no-repeat 0 0;
+    z-index: 1;
+  }
+}
+
+.icon-video {
+  margin-top: 30px;
+  margin-left: 34px;
+  fill: #63d1bb;
+}
+
+.production__title {
+  width: 140px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  margin-top: 24px;
+  margin-left: 23px;
+  margin-bottom: 25px;
+  padding-bottom: 156px;
+}
+
+.production__img {
+  position: absolute;
+  top: 97px;
+  left: 30px;
+}
+
+.production__info {
+  width: 192px;
+  font-size: 13px;
+  color: #444444;
+  padding-left: 34px;
+  padding-top: 7px;
+  margin-bottom: 25px;
+}
+
+.production__button {
+  width: 188px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .production {
+    margin-bottom: 63px;
+  }
+
+ .production__img {
+   top: 0;
+   left: 50px;
+   width: 668px;
+   height: 455px;
+ }
+
+ .production__wrapper {
+   padding-top: 457px;
+   position: relative;
+ }
+
+ .production__top {
+   padding: 30px 42px 46px 42px;
+
+   &::after {
+     top: -270px;
+     left: 284px;
+   }
+ }
+
+ .icon-video {
+   margin: 0;
+   margin-right: 31px;
+   box-sizing: border-box;
+ }
+
+ .production__title {
+   width: 265px;
+   font-size: 20px;
+   margin: 0;
+   margin-bottom: 32px;
+   padding: 0;
+   padding-top: 5px;
+
+ }
+
+ .production__info {
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   margin-bottom: 35px;
+   font-size: 15px;
+   line-height: 30px;
+ }
+
+ .production__button {
+   width: 100%;
+ }
+}
+
+@media (min-width: @desktop-width) {
+  .production__img {
+    width: 682px;
+  }
+
+  .production__top {
+    width: 1050px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: 760px;
+    padding-top: 42px;
+    padding-bottom: 10px;
+    border: 1px solid #ececec;
+
+
+    &::after {
+      top: 190px;
+      left: 290px;
+    }
+  }
+
+  .production__wrapper {
+    padding: 0;
+  }
+
+  .icon-video {
+    margin-bottom: 18px;
+  }
+
+  .production__title {
+    width: 236px;
+  }
+
+  .production__info {
+    width: 228px;
+    margin-bottom: 45px;
+  }
+
+  .production__button {
+    width: 230px;
+    margin-right: 16px;
+  }
+
+  .production {
+    margin-bottom: 157px;
+  }
+}

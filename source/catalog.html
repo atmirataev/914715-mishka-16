@@ -75,7 +75,7 @@
               <picture>
                 <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x" type="image/webp">
-                <source srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x" type="image/webp">
+                <source srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                 <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья" class="catalog__item--image" height="195" width="260">
@@ -100,13 +100,28 @@
                 </picture>
               </div>
             <div class="catalog__item--right">
-              <h2 class="catalog__item--title">Большая корзинка для игрушек</h2>
+              <h2 class="catalog__item--title">Большая корзинка <br> для игрушек</h2>
               <p class="catalog__item--description">Диаметр 30 см, высота 30 см</p>
               <p class="catalog__item--price">1 500 руб.</p>
               <span class="catalog__item--buy"></span>
             </div>
           </li>
         </ul>
+      </section>
+      <section class="production">
+        <div class="production__wrapper wrapper">
+          <div class="production__top">
+            <svg class="icon-video" width="32" height="32"><use xlink:href="#icon-video"></use></use></svg>
+            <h2 class="production__title">Процесс производства</h2>
+            <p class="production__info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="#" class="production__button button">Сделать заказ</a>
+          </div>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="production__img" src="img/video-mobile@1x.jpg 1x" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видеозапись процесса производства">
+          </picture>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
