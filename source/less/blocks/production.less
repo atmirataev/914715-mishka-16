@@ -12,6 +12,14 @@
   border-top: 1px solid #ececec;
   position: relative;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+
   &::after {
     content: "";
     width: 101px;
@@ -24,7 +32,15 @@
   }
 }
 
-.icon-video {
+.production__top:hover::after {
+  transform: scale(1.2);
+}
+
+.production__top:active::after {
+  opacity: 0.3;
+}
+
+.production__icon-video {
   margin-top: 30px;
   margin-left: 34px;
   fill: #63d1bb;
@@ -66,55 +82,54 @@
     margin-bottom: 63px;
   }
 
- .production__img {
-   top: 0;
-   left: 50px;
-   width: 668px;
-   height: 455px;
- }
+  .production__img {
+    top: 0;
+    left: 50px;
+    width: 668px;
+    height: 455px;
+  }
 
- .production__wrapper {
-   padding-top: 457px;
-   position: relative;
- }
+  .production__wrapper {
+    padding-top: 457px;
+    position: relative;
+  }
 
- .production__top {
-   padding: 30px 42px 46px 42px;
+  .production__top {
+    padding: 30px 42px 46px 42px;
 
-   &::after {
-     top: -270px;
-     left: 284px;
-   }
- }
+    &::after {
+      top: -270px;
+      left: 284px;
+    }
+  }
 
- .icon-video {
-   margin: 0;
-   margin-right: 31px;
-   box-sizing: border-box;
- }
+  .icon-video {
+    margin: 0;
+    margin-right: 31px;
+    box-sizing: border-box;
+  }
 
- .production__title {
-   width: 265px;
-   font-size: 20px;
-   margin: 0;
-   margin-bottom: 32px;
-   padding: 0;
-   padding-top: 5px;
+  .production__title {
+    width: 265px;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0;
+    padding-top: 5px;
+  }
 
- }
+  .production__info {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 15px;
+    line-height: 30px;
+  }
 
- .production__info {
-   width: 100%;
-   padding: 0;
-   margin: 0;
-   margin-bottom: 35px;
-   font-size: 15px;
-   line-height: 30px;
- }
-
- .production__button {
-   width: 100%;
- }
+  .production__button {
+    width: 100%;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -158,6 +173,7 @@
   .production__button {
     width: 230px;
     margin-right: 16px;
+    margin-bottom: 50px;
   }
 
   .production {

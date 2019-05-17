@@ -36,6 +36,16 @@
   margin-left: 29px;
 }
 
+
+.contacts__info-right--email:hover {
+  color: #46c1ae;
+}
+
+.contacts__info-right--email:active {
+  color: #46c1ae;
+  opacity: 0.3;
+}
+
 .contacts__info-right--address {
   width: 155px;
 }
@@ -48,6 +58,13 @@
   margin-bottom: 36px;
 }
 
+.contacts__map-interactive {
+  width: 260px;
+  height: 369px;
+  position: absolute;
+  z-index: 10;
+}
+
 .contacts__button--left {
   display: none;
 }
@@ -57,6 +74,7 @@
     padding-top: 27px;
     padding-bottom: 57px;
   }
+
   .contacts__wrapper {
     position: relative;
 
@@ -108,6 +126,11 @@
     margin-bottom: 48px;
   }
 
+  .contacts__map-interactive {
+    width: 668px;
+    height: 458px;
+  }
+
   .contacts__button {
     width: 225px;
   }
@@ -145,6 +168,9 @@
 
   .contacts__right {
     width: 525px;
+    position: absolute;
+    top: 73px;
+    right: 196px;
   }
 
   .contacts__button {
@@ -178,15 +204,16 @@
     margin-bottom: 29px;
   }
 
-  .contacts__right {
-    position: absolute;
-    top: 73px;
-    right: 196px;
-  }
-
   .contacts__map-image {
     width: 525px;
     height: 457px;
     margin-left: 5px;
+  }
+
+  .contacts__map-interactive {
+    width: 525px;
+    height: 457px;
+    top: 75px;
+    right: 51px;
   }
 }
