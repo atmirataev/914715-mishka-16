@@ -4,9 +4,9 @@ var navToggle = document.querySelector('.page-header__toggle');
 var orderBtn = document.querySelectorAll('.order__button');
 var userCart = document.querySelector('.modal-cart');
 
-navToggle.classList.add('page-header__toggle--closed');
-siteMenu.classList.add('site-menu--closed');
-userMenu.classList.add('user-menu--closed');
+// navToggle.classList.add('page-header__toggle--closed');
+// siteMenu.classList.add('site-menu--closed');
+// userMenu.classList.add('user-menu--closed');
 
 
 navToggle.addEventListener('click', function () {
