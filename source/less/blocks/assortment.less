@@ -5,7 +5,7 @@
 .assortment__wrapper {
   background-image: url("../../img/hero-mobile@1x.jpg");
   background-size: 575px auto;
-  background-position: center 0;
+  background-position: center -19px;
   background-color: #f9f9f9;
   background-repeat: no-repeat;
   width: @mobile-width;
@@ -18,9 +18,9 @@
 
 .assortment__item {
   display: block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
+  padding-top: 26px;
+  padding-bottom: 29px;
+  padding-left: 28px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -35,8 +35,8 @@
       width: 40px;
       height: 62px;
       position: absolute;
-      top: 30px;
-      right: 30px;
+      top: 23px;
+      right: 36px;
       background: url("../../img/icon-interior.svg") no-repeat 0 0;
       opacity: 0.1;
     }
@@ -50,11 +50,19 @@
       width: 60px;
       height: 60px;
       position: absolute;
-      top: 30px;
-      right: 30px;
+      top: 21px;
+      right: 27px;
       background: url("../../img/icon-toy.svg") no-repeat 0 0;
       opacity: 0.1;
     }
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -71,9 +79,9 @@
     height: 23px;
     position: absolute;
     bottom: 0;
-    left: 0;
-    background: url("../../img/bg-zigzag-fill.svg") repeat-x 0 0;
-    z-index: 5;
+    background-image: url("../../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-size: auto 23px;
   }
 
   .assortment__wrapper {
@@ -95,17 +103,34 @@
   .assortment__item {
     width: 334px;
     padding: 0;
-    padding-top: 45px;
-    padding-bottom: 45px;
-    padding-left: 43px;
+    padding-top: 29px;
+    padding-bottom: 42px;
+    padding-left: 36px;
     box-sizing: border-box;
     margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--interior::after {
+      top: 27px;
+      right: 37px;
+    }
+
+    &--toys::after {
+      top: 30px;
+      right: 34px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .assortment {
     padding: 0;
+
+    &::after {
+      height: 33px;
+      background-size: auto 33px;
+    }
   }
 
   .assortment__wrapper {
@@ -121,9 +146,5 @@
 
   .assortment__item {
     width: 525px;
-    border-bottom: 50px solid #000000;
-    border-image-source: url("../../img/bg-zigzag-line.svg");
-    border-image-repeat: stretch;
-    border-image-width: 0 0 50px 0;
   }
 }

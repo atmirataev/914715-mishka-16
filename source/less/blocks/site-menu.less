@@ -13,7 +13,7 @@
 
 .site__item--link {
   display: block;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-bottom: 28px;
   padding-left: 75px;
   font-weight: bold;
@@ -21,6 +21,14 @@
   line-height: 24px;
   color: #000000;
   position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site__item--hidden {
@@ -55,6 +63,10 @@
   .site__item {
     width: 190px;
 
+    &--first {
+      width: 184px;
+    }
+
 
     &--link {
       font-size: 17px;
@@ -70,9 +82,13 @@
 
     &--hidden {
       display: block;
-      font-size: 15px;
       border: none;
       z-index: 10;
     }
+  }
+
+  .site__item--hidden .site__item--link {
+    font-size: 15px;
+    padding-top: 17px;
   }
 }
