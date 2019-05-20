@@ -1,7 +1,7 @@
 var siteMenu = document.querySelector('.site-menu');
 var userMenu = document.querySelector('.user-menu');
 var navToggle = document.querySelector('.page-header__toggle');
-var orderBtn = document.querySelectorAll('.order__button');
+var orderBtn = document.querySelectorAll('.button__order');
 var userCart = document.querySelector('.modal-cart');
 
 navToggle.classList.remove('page-header__toggle--no-js');
