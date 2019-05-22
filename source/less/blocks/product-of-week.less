@@ -98,6 +98,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding-bottom: 68px;
+    padding-top: 24px;
     position: relative;
   }
 
@@ -119,6 +120,10 @@
     padding-top: 5px;
   }
 
+  .product-of-week__left {
+    display: none;
+  }
+
   .product-of-week__title {
     display: inline-block;
     vertical-align: middle;
@@ -130,10 +135,10 @@
 
   .product-of-week__flag {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
     width: 80px;
     line-height: 17px;
-    margin: 0 25px 0 58px;
+    margin: 0 8px 0 68px;
 
     &--left {
       display: none;
@@ -189,12 +194,16 @@
 @media (min-width: @desktop-width) {
   .product-of-week {
     padding: 0;
-    padding-top: 112px;
+    padding-top: 106px;
 
     &::after {
-      height: 21px;
-      background-size: auto 21px;
+      height: 18px;
+      background-size: auto 18px;
     }
+  }
+
+  .product-of-week__left {
+    display: block;
   }
 
   .product-of-week__wrapper {
